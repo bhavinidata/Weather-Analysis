@@ -7,100 +7,119 @@
     <title>Weather Analysis</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    
 </head>
 <body>
-    <header>
-            <nav class="navbar navbar-expand-lg navbar-light m-0">
-                <a class="navbar-brand px-4 ml-5 my=0" href="index.html">Latitude</a>
-                <button class="navbar-toggler m-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <div class="collapse navbar-collapse m-0" id="navbarSupportedContent">
-                    <ul class="navbar-nav ml-auto">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <span class="caret"></span>Plots
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="max_temp.html">Max Tempratue</a>
-                            <a class="dropdown-item" href="humid.html">Humidity</a>
-                            <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
-                            <a class="dropdown-item" href="windspeed.html">WindSpeed</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="comparison.html"> Comparison</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="data.html">Data</a>
-                    </li>
-                    </ul>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand my=0" href="index.html">Latitude</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Plots
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="max_temp.html">Max Tempratue</a>
+                    <a class="dropdown-item" href="humidity.html">Humidity</a>
+                    <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                    <a class="dropdown-item" href="windspeed.html">WindSpeed</a>
                 </div>
-            </nav>
-        </header>
-            <div class="container-fluid">
-                <div class="row ml-3 mr-3">
-                    <div class="col-lg-8 col-md-12">
-                        <div class="box mt-5">
-                            <div class="row ">
-                                <h1 class= "py-4 pl-5">Summary: Latitude vs.X</h1>
-                            </div>
+            </li>
+            <li class="nav-item">
+                    <a class="nav-link" href="comparisons.html">Comparisons</a>
+                </li>
+            <li class="nav-item">
+                <a class="nav-link" href="data.html">Data<span class="sr-only"></span></a>
+            </li>
+        </div>
+    </nav>
+    <div class="padding mx-5">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-8 col-sm-12">
+                    <div class="container-fluid a">
+                        <div class="row h">
+                            <h1>Summary: Latitude vs.X</h1>
+                        </div>
                             <hr>
-                            <div class="row">
-                                <div class="col p-5">
-                                    <img class = "float-left mr-3 about-img " width="45%" src="Resources/assets/images/Fig1.png" alt="Max Temprature plot">
-                               
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis natus quasi blanditiis odit eveniet rerum, tempore sunt esse itaque repellat ipsum ratione hic dolorem culpa odio vel eum soluta earum.
-                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam non perspiciatis sapiente accusamus velit dignissimos harum laborum laboriosam iste. Repudiandae aperiam rerum hic voluptas similique odit assumenda voluptatum mollitia id.
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, expedita accusantium assumenda distinctio molestiae doloribus error minus amet architecto consequuntur qui illum corrupti laudantium optio quas nostrum asperiores libero? Voluptas?</p>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis natus quasi blanditiis odit eveniet rerum, tempore sunt esse itaque repellat ipsum ratione hic dolorem culpa odio vel eum soluta earum.
-                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam non perspiciatis sapiente accusamus velit dignissimos harum laborum laboriosam iste. Repudiandae aperiam rerum hic voluptas similique odit assumenda voluptatum mollitia id.
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, expedita accusantium assumenda distinctio molestiae doloribus error minus amet architecto consequuntur qui illum corrupti laudantium optio quas nostrum asperiores libero? Voluptas?</p>
-                                </div>
+                        <div class="row">
+                            <div class="col">
+                                <img class = "float-left" width="45%" src="Resources/assets/images/Fig1.png" alt="Max Temprature plot">
+                                <br>
+                                <p>The purpose of the project was to analyse how weather changes as you get closer to the equator. 
+                                    To accomplish this analysis, random 1500 Latitude and Longitudes have been selected, then Python CitiPy library has been to find the city closest to the Lat/Lon (dropping all duplicates) 
+                                    to get a listing of over 500 cities. 
+                                    The weather data has been pulled from OpenWeatherMapAPI for the cities (dropping cities with no data) to create a dataframe of weather information for over 500 cities.
+                                    </p>
+                                    <br>
+                                    
+                                <p>
+                                    After assembling the dataset, I used matplotlib to plot the various aspects of the weather Vs Latitude. Following relationships
+                                    has been analyzed.
+                                </p>
+                                <ul>
+                                    <li>Temperature (F) vs. Latitude</li>
+                                    <li>Humidity (%) vs. Latitude</li>
+                                    <li>Cloudiness (%)) vs. Latitude</li>
+                                    <li>Wind Speed (%) vs. Latitude</li>
+                                </ul>
+                                <p>This site provides the source data and visualizations created as part of the analysis, as well as explanations
+                                    and descriptions of any trends and corelations witnessed.
+                                </p>   
                             </div>
                         </div>
+                       
                     </div>
-                    <div class="col-lg-4 col-md-12">
-                        <div class="box my-5">
-                                <div class="row mr-5 ">
-                                    <h1 class= "py-4 pl-5">Visualizations</h1>
-                                </div>
-                                <hr>
-                                <div class="row mb-5">
-                                    <div class=" col-sm-3 col-lg-6 p-3 ">
-                                        <a href=max_temp.html><img class = "img-fluid" src= "Resources/assets/images/Fig1.png" ></a>
-                                    </div>
-                                    <div class=" col-sm-3 col-lg-6 p-3 ">
-                                        <a href=humid.html><img class = "img-fluid" src="Resources/assets/images/Fig2.png" ></a>
-                                    </div>
-                                        <div class="col-sm-3 col-lg-6 p-3 ">
-                                        <a href=cloudiness.html><img class = "img-fluid" src="Resources/assets/images/Fig3.png" ></a>
-                                    </div>
-                                        <div class="col-sm-3 col-lg-6 p-3 ">
-                                        <a href=windspeed.html><img class = "img-fluid" src="Resources/assets/images/Fig4.png"  ></a>
-                                    </div>
-                                </div>
+                </div>
+                <div class="col-lg-4 col-sm-12">
+                    <div class="container-fluid a">
+                        <div class="row h">
+                            <h1>Visualizations</h1>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class=" col-sm-3 col-lg-6 p-3 ">
+                                <a href=max_temp.html><img class = "img-fluid" src= "Resources/assets/images/Fig1.png" ></a>
+                            </div>
+                            <div class=" col-sm-3 col-lg-6 p-3 ">
+                                <a href=humidity.html><img class = "img-fluid" src="Resources/assets/images/Fig2.png" ></a>
+                            </div>
+                                <div class="col-sm-3 col-lg-6 p-3 ">
+                                <a href=cloudiness.html><img class = "img-fluid" src="Resources/assets/images/Fig3.png" ></a>
+                            </div>
+                                <div class="col-sm-3 col-lg-6 p-3 ">
+                                <a href=windspeed.html><img class = "img-fluid" src="Resources/assets/images/Fig4.png"  ></a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        <footer class="footer">
-                <div class="row greenline mb-0">
-                </div>
-                <div class="row mb-0 ">
-                    <div class="col-md-12 last">
-                    <p class="text-center"></p>    
-                        Data Analysis and Visualization
-                    </div>
-                </div>
-               
-        </footer>
-            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        </div>
+    </div>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
 </body>
+<footer class="d-flex justify-content-center mt-auto">
+    <div class="container-fluid f">
+        <div class="row">
+            <div class="col greenline">
+                <p></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col last">
+            <p class="text-center">   
+                Data Analysis and Visualization</p>   
+        </div>
+    </div>        
+</footer>
 </html>
