@@ -6,15 +6,7 @@ body{
     min-height: 95vh;
     background-color: lightgray;
     position: relative;
-    /* padding-bottom: 30px; */
 }
-/* body{
-   
-    background-color: lightgray;
-    display: flex;
-    height: 100%;
-    flex-direction: column;
-} */
 
 .navbar{
     background-color:white;
@@ -28,31 +20,15 @@ body{
     font-size: 35px;
     text-align: center;
     font-weight: bold;
-    /* height: 2.5em; */
     margin: 0px 15px 0px 50px;
     padding: 5px 10px 5px 10px;
 
 }
-/* .show > .nav-link focus{
-    background: lightgray !important ;
-      box-shadow:none !important;
-      border: none !important;
-    }
-    .nav-link{
-      box-shadow:none !important;
-      border: none !important;
-    } */
-/* .container{
-    background-color: white;
-    padding: 2em;
-} */
 .container{
     background-color: white;
     margin-bottom: 5px;
 
 }
-
-
 
 .a{
     background-color: white;
@@ -70,14 +46,8 @@ body{
 .padding{
     margin-top: 15px;
     min-height: 85vh; 
-    /* overflow: hidden;
-    display: block; */
     position: relative;
     padding: 5px; 
-    /* padding-bottom: 30px; height of your footer */
-    /* flex: 1 0 auto;
-    border: 1px solid #000; */
- 
 }
 table{
     width: 100%;
@@ -110,27 +80,8 @@ footer{
 color: white;;
 width:100%;
 position: absolute;
-/* bottom:0; */
 height: 30px;
-/* padding-bottom: 0 */
 }
-
-/* footer{
-    color: white;;
-    width:100%;
-
-    bottom:0;
-    height: 7%;
-
-    flex: 0 0 auto;
-    display: flex;
-
-    margin: 1em;
-    padding: 1em;
-
-    border-top: 1px solid blue;
-    justify-content: center;
-} */
 
 .greenline{
     background-color: rgb(9, 136, 94);
