@@ -98,8 +98,10 @@ font-size: 15px;
 
 @media(max-width: 1199.98px){
     .padding{
-        margin-left: 3px !important;
-        margin-right: 3px !important;
+        margin-left: 1px !important;
+        margin-right: 1px !important;
+        margin-top: 3px;
+        min-height: 90vh; 
     }
     h1{
         font-size: 25px;
@@ -114,8 +116,14 @@ font-size: 15px;
         padding: 3px;
     }
     .container{
-
         padding-right: 0px;
         padding-left: 0px;
+    }
+    .container-fluid{
+        margin-top: 5px;
+    }
+    .datacon{
+        padding-top: 0 !important;
+        margin-top: 10px !important;
     }
 }
