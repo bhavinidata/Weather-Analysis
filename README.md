@@ -1,21 +1,45 @@
-# Web Design - Web Visualization Dashboard (Latitude)
+## Weather Analysis as we approach to equator
+
+ A Python script to visualize the weather of 500+ cities across the world of varying distance from the equator. To accomplish this, [simple Python library](https://pypi.python.org/pypi/citipy),  and the [OpenWeatherMap API](https://openweathermap.org/api) have been used.
+
+### Objectives
+To build a series of scatter plots to showcase the following relationships:
+
+* Temperature (F) vs. Latitude
+* Humidity (%) vs. Latitude
+* Cloudiness (%) vs. Latitude
+* Wind Speed (mph) vs. Latitude
+
+This project:
+
+* Randomly selects **at least** 500 unique (non-repeat) cities based on latitude and longitude.
+* Performs a weather check on each of the cities using a series of successive API calls.
+* Includes a print log of each city as it's being processed with the city number and city name.
+* Saves both a CSV of all data retrieved and png images for each scatter plot.
+* Includes a written description of three observable trends based on the data.
+
+Observations:
+* Temperature is more near the equator, as we go far from equator, temprature decreases.
+* Humidity is more in north side of equator.
+* Windspeed is more in north side of equator.
+* There is no relation between Coudiness and Latitude
+
+
+# Web Visualization Dashboard
 
 ## Background
 
-Data is more powerful when we share it with others! Let's take what we've learned about HTML and CSS to create a dashboard showing off the analysis we've done.
+Data is more powerful when we share it with others! Let's take look by creating a dashboard showing off the analysis that has been done above.
 
 ![Images/landingResize.png](Images/landingResize.png)
 
 
 ## Latitude - Latitude Analysis Dashboard with Attitude
 
-Create a visualization dashboard website using visualizations. Specifically, we'll be plotting [weather data](Resources/cities.csv).
+Created a visualization dashboard website using visualizations. Specifically, [weather data](Resources/cities.csv) has been plotted.
 
-In building this dashboard, create individual pages for each plot and a means by which we can navigate between them. These pages will contain the visualizations and their corresponding explanations. We'll also have a landing page, a page where we can see a comparison of all of the plots, and another page where we can view the data used to build them.
+In building this dashboard, created individual pages for each plot and a means by which we can navigate between them. These pages will contain the visualizations and their corresponding explanations. There is a landing page, a page where we can see a comparison of all of the plots, and another page where we can view the data used to build them.
 
-### Website Requirements
-
-For reference, see the ["Screenshots" section](#screenshots) below.
 
 The website consists of 7 pages total, including:
 
@@ -35,15 +59,14 @@ The website consists of 7 pages total, including:
     * The table must be a bootstrap table component.
     * The data must come from exporting the `.csv` file as HTML, or converting it to HTML. Try using a tool you already know, pandas. Pandas has a nifty method approprately called `to_html` that allows you to generate a HTML table from a pandas dataframe. See the documentation [here](https://pandas.pydata.org/pandas-docs/version/0.17.0/generated/pandas.DataFrame.to_html.html)
 
-The website must, at the top of every page, have a navigation menu that:
+The website has a navigation menu that:
 
 * Has the name of the site on the left of the nav which allows users to return to the landing page from any page.
 * Contains a dropdown on the right of the navbar named "Plots" which provides links to each individual visualization page.
 * Provides two more links on the right: "Comparisons" which links to the comparisons page, and "Data" which links to the data page.
 * Is responsive (using media queries). The nav must have similar behavior as the screenshots ["Navigation Menu" section](#navigation-menu) (notice the background color change).
 
-Finally, deploy the website to GitHub pages.
-
+Finally, the website to GitHub pages. https://bhavinidata.github.io/Web-Design-Challenge/
 
 ### Screenshots
 
